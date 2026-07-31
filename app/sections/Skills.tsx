@@ -1,6 +1,10 @@
-import { skills } from "@/app/data/portfolio";
+import type { Dictionary } from "@/app/i18n/dictionaries";
 
-export default function Skills() {
+type SkillsProps = {
+  skills: Dictionary["skills"];
+};
+
+export default function Skills({ skills }: SkillsProps) {
   return (
     <ul className="grid gap-8 sm:grid-cols-2">
       {skills.map((skill) => (

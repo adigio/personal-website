@@ -19,9 +19,8 @@ const silkscreen = Silkscreen({
 });
 
 export const metadata: Metadata = {
-  title: "Alan Di Giovanni — Fullstack Developer",
-  description:
-    "Portfolio and resume of Alan Di Giovanni, fullstack developer based in Buenos Aires, Argentina.",
+  title: "Alan Di Giovanni",
+  description: "Portfolio",
 };
 
 export default function RootLayout({
