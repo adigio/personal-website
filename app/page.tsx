@@ -1,15 +1,6 @@
-import Header from "@/app/sections/Header";
-import Tabs from "@/app/sections/Tabs";
-import Footer from "@/app/sections/Footer";
+import { redirect } from "next/navigation";
+import { defaultLocale } from "@/app/i18n/config";
 
 export default function Home() {
-  return (
-    <div className="polka-background flex min-h-full flex-col text-black">
-      <Header />
-      <main className="flex-1">
-        <Tabs />
-      </main>
-      <Footer />
-    </div>
-  );
+  redirect(`/${defaultLocale}`);
 }
